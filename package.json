@@ -15,13 +15,13 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.11.30",
-    "tsup": "^8.0.2",
     "tsx": "^4.7.1",
     "typescript": "^5.4.3"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
     "fastify": "^4.26.2",
+    "tsup": "^8.0.2",
     "postgres": "^3.4.4",
     "redis": "^4.6.13",
     "zod": "^3.22.4"
