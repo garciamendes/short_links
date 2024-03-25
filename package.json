@@ -8,7 +8,7 @@
     "dev": "tsx watch ./src/server.ts",
     "start": "node build/server.js",
     "setup": "tsx ./src/setup.ts",
-    "prod": "npm install && tsup src --out-dir build && npm run setup"
+    "prod": "npm install && npx tsc && npm run setup"
   },
   "keywords": [],
   "author": "",
