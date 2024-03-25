@@ -1,0 +1,17 @@
+### Creation new link
+POST {{baseUrl}}/api/links
+Content-Type: application/json
+
+{
+  "code": "rocketseat_official",
+  "url": "https://app.rocketseat.com.br/"
+}
+
+### List all links
+GET {{baseUrl}}/api/links
+
+### Redirect to link
+GET {{baseUrl}}/rocketseat_official
+
+### Metrics
+GET {{baseUrl}}/api/metrics
