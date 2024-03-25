@@ -1,9 +1,12 @@
 // Third party
 import Fastify from 'fastify'
-import { createLink } from './controllers/createLinks'
-import { listLinks } from './controllers/listLinks'
-import { linkRedirect } from './controllers/linkRedirect'
+
+// Local
+import { env } from './envs'
 import { metrics } from './controllers/metrics'
+import { listLinks } from './controllers/listLinks'
+import { createLink } from './controllers/createLinks'
+import { linkRedirect } from './controllers/linkRedirect'
 
 const fastify = Fastify()
 
@@ -13,5 +16,5 @@ fastify.get('/api/links', listLinks)
 fastify.get('/api/metrics', metrics)
 
 fastify.listen({
-  port: 3333
+  port: env.PORT
 }).then(() => console.log('HTTP Running!'))

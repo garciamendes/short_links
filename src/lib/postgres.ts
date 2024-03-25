@@ -1,4 +1,7 @@
 // Third party
 import postgres from "postgres"
 
-export const sql = postgres('postgresql://docker:docker@localhost:5432/shortlinks')
+// Project
+import { env } from '../envs'
+
+export const sql = postgres(env.DB_POSTGRESS)

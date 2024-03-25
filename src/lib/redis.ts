@@ -1,7 +1,11 @@
+// Third party
 import { createClient } from 'redis'
 
+// Project
+import { env } from '../envs'
+
 export const redis = createClient({
-  url: 'redis://:dev123@localhost:6379'
+  url: env.DB_REDIS
 })
 
 redis.connect()
